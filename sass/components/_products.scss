@@ -1,0 +1,41 @@
+.products {
+    &__types {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        & li:last-child {
+            margin-right: 0;
+        }
+    }
+    &__header {
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        padding-bottom: 50px;
+    }
+    &__image {
+        margin-right: 30px;
+        position: relative;
+    }
+    &__label {
+        font-family: $BrandMainFont;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        color: $LogoSecondaryColor;
+        background: $BackgroundColor;
+        opacity: 80%;
+        margin: 0;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        width: 370px;
+    }
+}
+.products__image > .products__label {
+    position: absolute;
+    bottom: 0;
+}

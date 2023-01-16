@@ -1,0 +1,122 @@
+.footer {
+    padding: 60px 0;
+    background-color: $BrandBackgroundColor;
+    &__box {
+        display: flex;
+    }
+}
+.footer-links {
+    margin-top: 20px;
+    &__address {
+        font-style: normal;
+        color: $LogoSecondaryColor;
+        text-decoration: none;
+        line-height: 1.7;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        letter-spacing: 0.03em;
+    }
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 1.17;
+    }
+    &__link {
+        padding-top: 9px;
+        text-decoration: none;
+        color: $BrandSecondaryColor;
+        cursor: pointer;
+        fill: currentColor;
+        transition: color 250ms $TransitionTimingFunction,
+            fill 250ms $TransitionTimingFunction;
+        &--portfolio {
+            text-decoration: underline;
+        }
+        &:hover,
+        &:focus {
+            color: $BrandColor;
+        }
+    }
+}
+.sm {
+    margin-left: 70px;
+    &__header {
+        font-family: $BrandMainFont;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        color: $LogoSecondaryColor;
+        font-style: normal;
+    }
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    &__icon {
+        fill: $LogoSecondaryColor;
+        border-radius: 50%;
+        background: $IconBackgroundColor;
+        transition: background-color 250ms $TransitionTimingFunction;
+        outline: none;
+        &:is(:hover, :focus) {
+            background-color: $BrandColor;
+        }
+    }
+}
+.newsletter {
+    margin-left: 77px;
+    &__header {
+        font-family: $BrandMainFont;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        color: $LogoSecondaryColor;
+        font-style: normal;
+    }
+    &__form {
+        margin-top: 20px;
+        display: flex;
+    }
+    &__email {
+        width: 348px;
+        height: 50px;
+        color: $NewsletterTextColor;
+        background-color: $BrandBackgroundColor;
+        border: 1px solid $BrandBorderColor;
+        border-radius: 4px;
+        padding: 15px 0 15px 16px;
+        margin-right: 12px;
+        outline: none;
+    }
+    &__btn {
+        width: 200px;
+        height: 50px;
+        font-family: $BrandMainFont;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.875;
+        letter-spacing: 0.06em;
+        color: $LogoSecondaryColor;
+        background-color: $BrandColor;
+        box-shadow: 0px 4px 4px $DefaultShadowColor;
+        border-radius: 4px;
+        border: 1px solid $BrandColor;
+        padding: 10px 26px 10px 42px;
+        cursor: pointer;
+    }
+    &__submit-icon {
+        fill: $LogoSecondaryColor;
+        margin-left: 18px;
+    }
+}

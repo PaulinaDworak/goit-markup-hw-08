@@ -1,0 +1,35 @@
+.services {
+    text-align: center;
+    background-color: $BrandBackgroundColor;
+    background-image: linear-gradient(
+            to bottom,
+            $BackgroundImage,
+            $BackgroundImage
+        ),
+        url(../images/bg-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    &__header {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.3636;
+        color: $LogoSecondaryColor;
+        letter-spacing: 0.06em;
+        margin: -94px 252px 30px;
+        padding-top: 200px;
+    }
+    &__btn {
+        font-weight: 700;
+        line-height: 1.875;
+        background-color: $BrandColor;
+        color: $LogoSecondaryColor;
+        border-color: $BrandColor;
+        letter-spacing: 0.06em;
+        outline: none;
+        border-radius: 4px;
+        border: none;
+        padding: 10px 41px 10px 42px;
+        margin-bottom: 200px;
+        cursor: pointer;
+    }
+}

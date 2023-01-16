@@ -1,0 +1,38 @@
+.article-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    &__box {
+        margin-bottom: 30px;
+    }
+    &__item {
+        background-color: $SecondaryBackgroundColor;
+        padding: 25px 100px;
+        border-radius: 4px;
+    }
+}
+.articles {
+    list-style: none;
+    letter-spacing: 0.03em;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 94px;
+    gap: 30px;
+    &__header {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.172;
+        margin-bottom: 10px;
+        margin-top: -64px;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+}

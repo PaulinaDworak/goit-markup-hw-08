@@ -1,0 +1,30 @@
+.clients {
+    &__header {
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+        line-height: 1.2;
+        margin-bottom: 50px;
+        padding-top: 94px;
+    }
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        column-gap: 30px;
+        justify-content: center;
+    }
+    &__icon {
+        outline: 1px solid $BrandAccentColor;
+        padding: 17.71px 32px 14.25px;
+        border-radius: 4px;
+        fill: $BrandAccentColor;
+        transition: fill 250ms $TransitionTimingFunction,
+            outline 250ms $TransitionTimingFunction;
+        &:is(:hover, :focus) {
+            cursor: pointer;
+            fill: $BrandColor;
+            outline: 1px solid $BrandColor;
+        }
+    }
+}

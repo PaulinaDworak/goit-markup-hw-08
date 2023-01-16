@@ -1,0 +1,25 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: $BrandMainFont;
+    color: $BrandTextColor;
+}
+.section {
+    margin-bottom: 94px;
+    margin-top: 94px;
+}
+svg,
+img {
+    vertical-align: middle;
+}

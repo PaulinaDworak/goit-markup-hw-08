@@ -1,0 +1,31 @@
+.filters {
+    list-style: none;
+    text-align: center;
+    letter-spacing: 0.03em;
+    display: flex;
+    justify-content: center;
+    &__btn {
+        font-size: 16px;
+        font-weight: 500;
+        font-family: $BrandMainFont;
+        background-color: $SecondaryBackgroundColor;
+        border-color: $SecondaryBackgroundColor;
+        cursor: pointer;
+        line-height: 1.6;
+        outline: none;
+        border-radius: 4px;
+        border: none;
+        padding: 6px 22px;
+        margin: 94px 8px 50px 0;
+        transition: background-color 250ms $TransitionTimingFunction,
+            color 250ms $TransitionTimingFunction;
+        &:is(:hover, :focus) {
+            background-color: $BrandColor;
+            color: $LogoSecondaryColor;
+            box-shadow: 0px 4px 4px $ButtonsShadow;
+        }
+    }
+    & li:last-child {
+        margin-right: 0;
+    }
+}
