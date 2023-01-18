@@ -6,19 +6,20 @@
             $BackgroundImage,
             $BackgroundImage
         ),
-        url(../images/bg-img.png);
+        url(../images/bg-img-tel.png);
     background-repeat: no-repeat;
     background-position: center;
     &__header {
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.3636;
+        font-size: 26px;
+        line-height: 1.61;
         color: $LogoSecondaryColor;
         letter-spacing: 0.06em;
-        margin: -94px 252px 30px;
-        padding-top: 200px;
+        margin: -60px 37px 30px;
+        padding-top: 118px;
     }
     &__btn {
+        font-size: 16px;
         font-weight: 700;
         line-height: 1.875;
         background-color: $BrandColor;
@@ -29,7 +30,40 @@
         border-radius: 4px;
         border: none;
         padding: 10px 41px 10px 42px;
-        margin-bottom: 200px;
+        margin-bottom: 118px;
         cursor: pointer;
+    }
+}
+@media screen and (min-width: $TabletSize) {
+    .services {
+        background-image: linear-gradient(
+                to bottom,
+                $BackgroundImage,
+                $BackgroundImage
+            ),
+            url(../images/bg-img-tab.png);
+        &__header {
+            margin: -60px 185px 30px;
+        }
+    }
+}
+@media screen and (min-width: $DesktopSize) {
+    .services {
+        background-image: linear-gradient(
+                to bottom,
+                $BackgroundImage,
+                $BackgroundImage
+            ),
+            url(../images/bg-img.png);
+
+        &__header {
+            font-size: 44px;
+            line-height: 1.3636;
+            margin: -94px 252px 30px;
+            padding-top: 200px;
+        }
+        &__btn {
+            margin-bottom: 200px;
+        }
     }
 }

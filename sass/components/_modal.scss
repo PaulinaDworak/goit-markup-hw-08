@@ -10,8 +10,8 @@
     transition: visibility 550ms $TransitionTimingFunction;
 }
 .modal {
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     background-color: #ffffff;
     box-shadow: 0px 1px 3px $ShadowColor1, 0px 1px 1px $ShadowColor2,
         0px 2px 1px $BrandModalBackground;
@@ -55,8 +55,8 @@
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
-        width: 448px;
-        height: 23px;
+        width: 370px;
+        height: 60px;
         line-height: 1.15;
         letter-spacing: 0.03em;
         color: $BrandTextColor;
@@ -97,7 +97,7 @@
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.06em;
-    margin: 30px 124px;
+    margin: 30px 85px;
     cursor: pointer;
     transition-property: opacity, visibility;
     transition-duration: 550ms;
@@ -106,7 +106,7 @@
 .input-box {
     border: 1px solid $ModalBorderColor;
     border-radius: 4px;
-    width: 448px;
+    width: 370px;
     height: 40px;
     outline: none;
     padding-left: 42px;
@@ -122,7 +122,7 @@
     &--comments {
         border: 1px solid $ModalBorderColor;
         border-radius: 4px;
-        width: 448px;
+        width: 370px;
         height: 120px;
         outline: none;
         font-family: $BrandMainFont;
@@ -154,7 +154,7 @@
     text-align: center;
     display: flex;
     position: relative;
-    margin-left: 17px;
+
     cursor: pointer;
     &__input {
         position: absolute;
@@ -178,7 +178,7 @@
         font-family: $BrandMainFont;
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.714;
         letter-spacing: 0.03em;
         color: $BrandSecondaryColor;
@@ -205,4 +205,28 @@
 }
 .checkbox__input:checked ~ .checkbox-icon--unchecked {
     opacity: 0;
+}
+@media screen and (min-width: $DesktopSize) {
+    .modal {
+        width: 528px;
+        height: 581px;
+    }
+    .form {
+        &__header {
+            width: 448px;
+            height: 23px;
+        }
+    }
+    .input-box {
+        width: 448px;
+    }
+    .checkbox {
+        margin-left: 17px;
+        &__text {
+            font-size: 14px;
+        }
+    }
+    .submit-btn {
+        margin: 30px 115px;
+    }
 }

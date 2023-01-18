@@ -1,5 +1,5 @@
 .container {
-    width: 1200px;
+    max-width: 480px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -16,10 +16,27 @@ body {
     color: $BrandTextColor;
 }
 .section {
-    margin-bottom: 94px;
-    margin-top: 94px;
+    margin-bottom: 60px;
+    margin-top: 60px;
 }
 svg,
 img {
     vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: $TabletSize) {
+    .container {
+        max-width: 768px;
+    }
+}
+@media screen and (min-width: $DesktopSize) {
+    .container {
+        max-width: 1200px;
+    }
+    .section {
+        margin-bottom: 94px;
+        margin-top: 94px;
+    }
 }

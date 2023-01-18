@@ -4,6 +4,100 @@
         list-style: none;
         letter-spacing: 0.03em;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 60px;
+        margin-bottom: -60px;
+        gap: 30px;
+    }
+    &__header {
+        font-weight: 700;
+        font-size: 28px;
+        text-align: center;
+        line-height: 1.17;
+        margin-bottom: 30px;
+        padding-top: 60px;
+    }
+}
+.team-member {
+    background-color: $LogoSecondaryColor;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 1px 3px $ShadowColor1, 0px 1px 1px $ShadowColor2,
+        0px 2px 1px $ShadowColor3;
+    &__pic {
+        width: 450px;
+        height: 460px;
+    }
+    &__details {
+        padding-top: 30px;
+        text-align: center;
+    }
+    &__position {
+        font-weight: 400;
+        font-size: 16px;
+        color: $BrandSecondaryColor;
+        line-height: 1.17;
+        display: block;
+        margin-top: 10px;
+    }
+    &__sm-list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+        justify-content: center;
+        margin: 16px 32px 30px;
+    }
+    &__sm {
+        fill: $BrandAccentColor;
+        border-radius: 50%;
+        outline: none;
+        transition: background-color 250ms $TransitionTimingFunction,
+            fill 250ms $TransitionTimingFunction;
+        &:is(:hover, :focus) {
+            background-color: $BrandColor;
+            fill: $LogoSecondaryColor;
+        }
+    }
+}
+@media screen and (min-width: $TabletSize) {
+    .team-members {
+        &__list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+    .team-member {
+        &__pic {
+            width: 354px;
+            height: 374px;
+        }
+    }
+}
+@media screen and (min-width: $DesktopSize) {
+    .team-members {
+        &__list {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    .team-member {
+        &__pic {
+            width: 270px;
+            height: 260px;
+        }
+    }
+}
+/*.team-members {
+    background: $SecondaryBackgroundColor;
+    &__list {
+        list-style: none;
+        letter-spacing: 0.03em;
+        display: flex;
         flex-direction: row;
         column-gap: 30px;
         justify-content: center;
@@ -59,3 +153,4 @@
         }
     }
 }
+*/

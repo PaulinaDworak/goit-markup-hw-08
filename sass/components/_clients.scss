@@ -1,6 +1,65 @@
 .clients {
     &__header {
         font-weight: 700;
+        font-size: 28px;
+        text-align: center;
+        line-height: 1.17;
+        margin-bottom: 30px;
+        padding-top: 60px;
+        letter-spacing: 0.03em;
+    }
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+    &__icon {
+        width: 210px;
+        height: 92px;
+        outline: 1px solid $BrandAccentColor;
+        padding: 16px 52px;
+        border-radius: 4px;
+        fill: $BrandAccentColor;
+        transition: fill 250ms $TransitionTimingFunction,
+            outline 250ms $TransitionTimingFunction;
+        &:is(:hover, :focus) {
+            cursor: pointer;
+            fill: $BrandColor;
+            outline: 1px solid $BrandColor;
+        }
+    }
+}
+@media screen and (min-width: $TabletSize) {
+    .clients {
+        &__icon {
+            width: 226px;
+            height: 92px;
+            padding: 16px 60px;
+        }
+    }
+}
+@media screen and (min-width: $DesktopSize) {
+    .clients {
+        &__list {
+            display: flex;
+            flex-direction: row;
+        }
+        &__header {
+            margin-bottom: 50px;
+        }
+        &__icon {
+            width: 170px;
+            height: 92px;
+            padding: 14px 32px;
+        }
+    }
+}
+/*.clients {
+    &__header {
+        font-weight: 700;
         font-size: 36px;
         text-align: center;
         line-height: 1.2;
@@ -28,3 +87,4 @@
         }
     }
 }
+*/
