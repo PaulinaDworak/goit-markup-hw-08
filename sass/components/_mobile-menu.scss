@@ -1,15 +1,108 @@
-@media screen and (max-width: 480px) {
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 155vw;
+    padding: 48px 40px;
+    background-color: $LogoSecondaryColor;
+    transform: translateX(-150%);
+    transition: 250ms $TransitionTimingFunction;
+    &__nav {
+        list-style: none;
+        &--item {
+            margin-bottom: 32px;
+        }
+    }
+    &__link {
+        font-family: $BrandMainFont;
+        font-weight: 500;
+        font-size: 40px;
+        letter-spacing: 0.02em;
+        line-height: 1.17;
+        color: $BrandTextColor;
+        text-decoration: none;
+        cursor: pointer;
+        &--is-active {
+            color: $BrandColor;
+        }
+    }
+    &__contacts {
+        list-style: none;
+        &--item {
+            margin-top: 270px;
+            margin-bottom: 32px;
+        }
+        &--tel {
+            font-size: 34px;
+            font-weight: 500;
+            text-decoration: none;
+            letter-spacing: 0.02em;
+            color: $BrandColor;
+            cursor: pointer;
+        }
+        &--email {
+            font-size: 24px;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            color: $BrandSecondaryColor;
+        }
+    }
+    &__sm {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        margin-top: 64px;
+        margin-bottom: 0;
+        &--item {
+            border-left: 1px solid $BrandTextColor;
+            padding-right: 10px;
+            padding-left: 10px;
+            &:first-child {
+                border-left: none;
+                padding-left: 0;
+            }
+        }
+        &--link {
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            color: $BrandColor;
+            cursor: pointer;
+        }
+    }
+    &__toggle {
+        outline: none;
+        border: none;
+        background-color: inherit;
+        cursor: pointer;
+        &--close-btn {
+            position: absolute;
+            top: 21px;
+            left: 436px;
+            &:hover {
+                fill: $BrandColor;
+            }
+        }
+    }
+
+    &.is-open {
+        transform: translateX(0);
+        transition: 250ms $TransitionTimingFunction;
+    }
+}
+@media screen and (max-width: 767px) {
     .site-nav,
     .nav-contact {
         display: none;
     }
 }
-.menu {
-    width: 100vw;
-    height: 100vw;
-
-    &.is-open {
-        transform: translateX(0);
-        opacity: 1;
+@media screen and (min-width: $TabletSize) {
+    .menu {
+        &__toggle {
+            display: none;
+        }
     }
 }
