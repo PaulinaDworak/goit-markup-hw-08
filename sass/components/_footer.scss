@@ -128,9 +128,47 @@
 }
 
 @media screen and (min-width: $TabletSize) {
+    .footer {
+        &__box {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+    .sm {
+        margin-top: 0;
+        margin-left: 144px;
+    }
 }
 
 @media screen and (min-width: $DesktopSize) {
+    .footer {
+        &__box {
+            text-align: left;
+        }
+    }
+    .sm {
+        margin-top: 12px;
+        margin-left: 70px;
+        text-align: left;
+    }
+    .newsletter {
+        margin-top: 12px;
+        margin-left: 78px;
+
+        &__form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+        &__email {
+            width: 358px;
+        }
+        &__btn {
+            margin-top: 0;
+            margin-left: 10px;
+        }
+    }
 }
 
 /*.footer {
