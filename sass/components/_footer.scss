@@ -94,7 +94,7 @@
         flex-direction: column;
     }
     &__email {
-        width: 450px;
+        width: 100%;
         height: 50px;
         color: $NewsletterTextColor;
         background-color: $BrandBackgroundColor;
@@ -138,6 +138,11 @@
     .sm {
         margin-top: 0;
         margin-left: 144px;
+    }
+    .newsletter {
+        &__email {
+            width: 450px;
+        }
     }
 }
 

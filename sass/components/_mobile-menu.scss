@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 155vw;
+    height: 100%;
     padding: 48px 40px;
     background-color: $LogoSecondaryColor;
     transform: translateX(-150%);
@@ -54,7 +54,6 @@
         display: flex;
         flex-direction: row;
         margin-top: 64px;
-        margin-bottom: 0;
         &--item {
             border-left: 1px solid $BrandTextColor;
             padding-right: 10px;
@@ -81,7 +80,7 @@
         &--close-btn {
             position: absolute;
             top: 21px;
-            left: 436px;
+            right: 15px;
             &:hover {
                 fill: $BrandColor;
             }

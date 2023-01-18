@@ -7,8 +7,10 @@
             $BackgroundImage
         ),
         url(../images/bg-img-tel.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
     &__header {
         font-weight: 900;
         font-size: 26px;
@@ -34,6 +36,18 @@
         cursor: pointer;
     }
 }
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .services {
+        background-image: linear-gradient(
+                to bottom,
+                $BackgroundImage,
+                $BackgroundImage
+            ),
+            url(../images/bg-img-tel@2x.png);
+    }
+}
 @media screen and (min-width: $TabletSize) {
     .services {
         background-image: linear-gradient(
@@ -42,9 +56,22 @@
                 $BackgroundImage
             ),
             url(../images/bg-img-tab.png);
+
         &__header {
             margin: -60px 185px 30px;
         }
+    }
+}
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .services {
+        background-image: linear-gradient(
+                to bottom,
+                $BackgroundImage,
+                $BackgroundImage
+            ),
+            url(../images/bg-img-tab@2x.png);
     }
 }
 @media screen and (min-width: $DesktopSize) {
@@ -65,5 +92,17 @@
         &__btn {
             margin-bottom: 200px;
         }
+    }
+}
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .services {
+        background-image: linear-gradient(
+                to bottom,
+                $BackgroundImage,
+                $BackgroundImage
+            ),
+            url(../images/bg-img@2x.png);
     }
 }
