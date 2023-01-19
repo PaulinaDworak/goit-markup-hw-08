@@ -111,6 +111,7 @@
 
 @media screen and (min-width: $DesktopSize) {
     .menu {
+        display: none;
         &__toggle {
             display: none;
         }
