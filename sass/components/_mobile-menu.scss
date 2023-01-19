@@ -98,7 +98,18 @@
         display: none;
     }
 }
-@media screen and (min-width: $TabletSize) and (min-width: $DesktopSize) {
+@media screen and (min-width: $TabletSize) {
+    .menu {
+        &__toggle {
+            display: none;
+        }
+    }
+    .menu .is-open {
+        display: none;
+    }
+}
+
+@media screen and (min-width: $DesktopSize) {
     .menu {
         &__toggle {
             display: none;
