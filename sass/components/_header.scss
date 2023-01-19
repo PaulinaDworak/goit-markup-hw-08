@@ -87,7 +87,7 @@
 }
 @media screen and (min-width: $TabletSize) {
     .page-header {
-        padding: 24px 0 24px;
+        padding: 21px 0 21px;
     }
     .site-nav {
         gap: 60px;
@@ -120,6 +120,9 @@
 }
 
 @media screen and (min-width: $DesktopSize) {
+    .page-header {
+        padding: 24px 0 24px;
+    }
     .nav-contact {
         display: flex;
         flex-direction: row;

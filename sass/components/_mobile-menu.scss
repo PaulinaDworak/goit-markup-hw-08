@@ -3,16 +3,20 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 150vh;
-    padding: 48px 30px;
+    height: 100vh;
+    padding: 48px 40px;
     background-color: $LogoSecondaryColor;
     transform: translateX(-150%);
     transition: 250ms $TransitionTimingFunction;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     &__nav {
         list-style: none;
-        &--item {
-            margin-bottom: 32px;
-        }
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
     }
     &__link {
         font-family: $BrandMainFont;
@@ -29,10 +33,9 @@
     }
     &__contacts {
         list-style: none;
-        &--item {
-            margin-top: 270px;
-            margin-bottom: 32px;
-        }
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
         &--tel {
             font-size: 34px;
             font-weight: 500;
@@ -53,11 +56,12 @@
         list-style: none;
         display: flex;
         flex-direction: row;
-        margin-top: 64px;
+        gap: 4px;
+
         &--item {
             border-left: 1px solid $BrandTextColor;
-            padding-right: 8px;
-            padding-left: 8px;
+            padding-left: 4px;
+
             &:first-child {
                 border-left: none;
                 padding-left: 0;
@@ -104,19 +108,9 @@
             display: none;
         }
     }
-    .menu .is-open {
-        display: none;
-    }
 }
-
-@media screen and (min-width: $DesktopSize) {
+@media (min-width: $TabletSize) {
     .menu {
-        display: none;
-        &__toggle {
-            display: none;
-        }
-    }
-    .menu .is-open {
         display: none;
     }
 }

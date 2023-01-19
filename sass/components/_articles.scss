@@ -1,10 +1,11 @@
 .article-icons {
+    display: flexbox;
+    justify-content: center;
     &__item {
         width: 100vw;
         height: 120px;
         background-color: $SecondaryBackgroundColor;
         border-radius: 4px;
-        padding: 25px 135px;
     }
 }
 
